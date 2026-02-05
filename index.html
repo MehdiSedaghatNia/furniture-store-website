@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Alegreya Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link rel="icon" href="./assets/crown.png" />
+    <title>Furniture Store</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrapper">
+        <div class="site-header--inner">
+          <!-- primary nav -->
+          <nav class="primary-nav">
+            <!-- socials -->
+            <div class="primary-nav--socials">
+              <ul class="flex-dir-row">
+                <li>
+                  <i class="fab fa-facebook-square"></i>
+                </li>
+                <li>
+                  <i class="fab fa-linkedin"></i>
+                </li>
+                <li>
+                  <i class="fab fa-twitter-square"></i>
+                </li>
+                <li>
+                  <i class="fab fa-instagram"></i>
+                </li>
+              </ul>
+            </div>
+
+            <!-- actions -->
+            <div class="primary-nav--actions">
+              <ul class="flex-dir-row">
+                <li>
+                  <a href="#">
+                    <i class="fas fa-sign-in"></i>
+                    Sign up / Log in
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-shopping-card"></i>
+                    Cart(2 items)
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-truck"></i>
+                    Order Now
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-heart"></i>
+                    Wish List
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <!-- search form -->
+          <div class="search">
+            <form class="search-form">
+              <input type="text" placeholder="search" class="search-input" />
+              <button class="search-btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <!-- secondary nav -->
+          <nav class="secondary-nav">
+            <ul class="flex-dir-row">
+              <li><a href="#">Furniture</a></li>
+              <li><a href="#">Rooms</a></li>
+              <li><a href="#">Kitchen</a></li>
+              <li><a href="#">Outdoor</a></li>
+              <li><a href="#">Lighting</a></li>
+              <li><a href="#">Bed & Health</a></li>
+              <li><a href="#">Window</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero section">
+        <div class="wrapper">
+          <div class="hero--inner">
+            <!-- content / text -->
+
+            <!-- slide (images & buttons) -->
+            <div class="slide">
+              <div class="slide-content">
+                <h1>Great Sale</h1>
+                <a href="#">shop now</a>
+              </div>
+
+              <!-- images -->
+              <div class="slide-images" id="slide-images">
+                <img src="./assets/slide-img-1.jpg" alt="saloon with a tv" />
+                <img src="./assets/slide-img-2.jpg" alt="room with furniture" />
+                <img src="./assets/slide-img-3.jpg" alt="room with pool view" />
+                <img src="./assets/slide-img-4.jpg" alt="table with plates" />
+              </div>
+
+              <!-- buttons -->
+              <!-- <div class="slide-btns">
+                <button class="slide-btn slide-btn-1"></button>
+                <button class="slide-btn slide-btn-2"></button>
+                <button class="slide-btn slide-btn-3"></button>
+                <button class="slide-btn slide-btn-4"></button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Day Offer (2 img cards) -->
+      <section class="section">
+        <div class="wrapper">
+          <div class="grid-equal-cols">
+            <div class="day-offer-content flow">
+              <h2 class="section-title">Day Offer</h2>
+              <p>Feel better with new furniture</p>
+              <a href="#" class="btn">Shop Now</a>
+              <img src="./assets/day-offer-img-two.jpg" alt="a vase on sofa" />
+            </div>
+            <div>
+              <img
+                src="./assets/day-offer-img-one.jpg"
+                alt="a vase besides sofa"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Best Selling (6 cards) -->
+      <section class="section">
+        <div class="wrapper bestselling">
+          <div class="section-title">Bestsellling Furniture</div>
+          <!-- 6cards -->
+          <div class="grid-auto-fit">
+            <div class="card">
+              <img
+                src="./assets/bestsellig-furniture-kitchen.jpg"
+                alt="kitchen"
+              />
+              <h3 class="card-title">Kitchen</h3>
+              <p class="price">price: $15000</p>
+              <a href="#" class="card-btn">Buy Now</a>
+            </div>
+
+            <div class="card">
+              <img
+                src="./assets/bestsellig-furniture-wardrobe.jpg"
+                alt="wordrode"
+              />
+              <h3 class="card-title">Wardrode</h3>
+              <p class="price">price: $1000</p>
+              <a href="#" class="card-btn">Buy Now</a>
+            </div>
+
+            <div class="card">
+              <img src="./assets/bestsellig-furniture-sofa.jpg" alt="sofa" />
+              <h3 class="card-title">Sofa</h3>
+              <p class="price">price: $1500</p>
+              <a href="#" class="card-btn">Buy Now</a>
+            </div>
+
+            <div class="card">
+              <img src="./assets/bestsellig-furniture-table.jpg" alt="table" />
+              <h3 class="card-title">Table</h3>
+              <p class="price">price: $3500</p>
+              <a href="#" class="card-btn">Buy Now</a>
+            </div>
+
+            <div class="card">
+              <img src="./assets/bestsellig-furniture-bed.jpg" alt="bed" />
+              <h3 class="card-title">Bed</h3>
+              <p class="price">price: $1500</p>
+              <a href="#" class="card-btn">Buy Now</a>
+            </div>
+
+            <div class="card">
+              <img
+                src="./assets/bestsellig-furniture-chairs.jpg"
+                alt="chairs"
+              />
+              <h3 class="card-title">Chairs</h3>
+              <p class="price">price: $500</p>
+              <a href="#" class="card-btn">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="section">
+        <div class="wrapper" data-width="wide" data-padding-inline="none">
+          <div class="gallery">
+            <img src="./assets/gallery-img-1.jpeg" alt="gallery image" />
+            <img src="./assets/gallery-img-5.jpeg" alt="gallery image" />
+            <img src="./assets/gallery-img-9.jpeg" alt="gallery image" />
+            <img src="./assets/gallery-img-2.jpeg" alt="gallery image" />
+            <img src="./assets/gallery-img-6.jpeg" alt="gallery image" />
+            <img src="./assets/gallery-img-10.jpeg" alt="gallery image" />
+            <img src="./assets/gallery-img-8.jpeg" alt="gallery image" />
+            <img src="./assets/gallery-img-3.jpeg" alt="gallery image" />
+            <img src="./assets/gallery-img-7.jpeg" alt="gallery image" />
+            <img src="./assets/gallery-img-11.jpeg" alt="gallery image" />
+            <img src="./assets/gallery-img-4.jpeg" alt="gallery image" />
+            <img src="./assets/gallery-img-12.jpeg" alt="gallery image" />
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="wrapper" data-width="narrow">
+          <div class="footer-container">
+            <h4 class="footer-title">Join us and be in the know</h4>
+            <form class="footer-form">
+              <input type="text" class="form-input" placeholder="Enter Email" />
+              <button class="form-btn">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </footer>
+
+      <div class="rights-reserved">
+        <p>&copy; Falcon's Stoop. All Rights Reserved</p>
+      </div>
+    </main>
+  </body>
+</html>
